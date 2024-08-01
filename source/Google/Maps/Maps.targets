@@ -5,6 +5,7 @@
 	<_GoogleMapsSDKBaseResourceFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Resources\GoogleMapsResources\</_GoogleMapsSDKBaseResourceFolder>
     <_GoogleMapsSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Frameworks\</_GoogleMapsSDKBaseFolder>
     <_GoogleMapsBaseSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Base\Frameworks\</_GoogleMapsBaseSDKBaseFolder>
+	<_GoogleMapsBaseSDKM4BFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\M4B\Frameworks\</_GoogleMapsBaseSDKM4BFolder>
   </PropertyGroup>
   <ItemGroup Condition="('$(OutputType)'!='Library' OR '$(IsAppExtension)'=='True')">
     <XamarinBuildDownload Include="$(_GoogleMapsItemsFolder)">
@@ -19,6 +20,13 @@
       <Frameworks>Accelerate Contacts CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security CoreData CoreGraphics CoreLocation CoreTelephony CoreText QuartzCore SystemConfiguration UIKit</Frameworks>
     </NativeReference>
     <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
+      <Kind>Framework</Kind>
+      <SmartLink>True</SmartLink>
+      <ForceLoad>True</ForceLoad>
+      <LinkerFlags>-ObjC</LinkerFlags>
+	  <Frameworks>CoreData CoreGraphics CoreLocation CoreTelephony CoreText QuartzCore SystemConfiguration UIKit Accelerate Contacts CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
+    </NativeReference>
+	<NativeReference Include="$(_GoogleMapsBaseSDKM4BFolder)GoogleMapsM4B.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
