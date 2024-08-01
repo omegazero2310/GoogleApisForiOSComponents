@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
     <_GoogleMapsAssemblyName>Google.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</_GoogleMapsAssemblyName>
-    <_GoogleMapsItemsFolder>GMps-6.0.1</_GoogleMapsItemsFolder>
+    <_GoogleMapsItemsFolder>GMps-9.0.0</_GoogleMapsItemsFolder>
     <_GoogleMapsSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Frameworks\</_GoogleMapsSDKBaseFolder>
     <_GoogleMapsBaseSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Base\Frameworks\</_GoogleMapsBaseSDKBaseFolder>
   </PropertyGroup>
