@@ -185,7 +185,7 @@
 				"Type": "Pod",
 				"Pod": {
 					"Name": "GoogleMaps",
-					"Version": "6.0.1"
+					"Version": "9.0.0"
 				}
 			}
 		},
