@@ -2,7 +2,7 @@
   <PropertyGroup>
     <_GoogleMapsAssemblyName>Google.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</_GoogleMapsAssemblyName>
     <_GoogleMapsItemsFolder>GMps-9.0.0</_GoogleMapsItemsFolder>
-	<_GoogleMapsSDKBaseResourceFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Reasources\GoogleMapsReasources\</_GoogleMapsSDKBaseResourceFolder>
+	<_GoogleMapsSDKBaseResourceFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Resources\GoogleMapsResources\</_GoogleMapsSDKBaseResourceFolder>
     <_GoogleMapsSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Frameworks\</_GoogleMapsSDKBaseFolder>
     <_GoogleMapsBaseSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Base\Frameworks\</_GoogleMapsBaseSDKBaseFolder>
   </PropertyGroup>
