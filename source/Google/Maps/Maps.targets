@@ -59,18 +59,6 @@
         <LogicalName>GoogleMaps.bundle\bubble_right@3x.png</LogicalName>
         <Optimize>False</Optimize>
       </BundleResource>
-      <BundleResource Include="$(_GoogleMapsSDKBaseResourceFolder)GoogleMaps.bundle\default_marker.png" Visible="False">
-        <LogicalName>GoogleMaps.bundle\default_marker.png</LogicalName>
-        <Optimize>False</Optimize>
-      </BundleResource>
-      <BundleResource Include="$(_GoogleMapsSDKBaseResourceFolder)GoogleMaps.bundle\default_marker@2x.png" Visible="False">
-        <LogicalName>GoogleMaps.bundle\default_marker@2x.png</LogicalName>
-        <Optimize>False</Optimize>
-      </BundleResource>
-      <BundleResource Include="$(_GoogleMapsSDKBaseResourceFolder)GoogleMaps.bundle\default_marker@3x.png" Visible="False">
-        <LogicalName>GoogleMaps.bundle\default_marker@3x.png</LogicalName>
-        <Optimize>False</Optimize>
-      </BundleResource>
       <BundleResource Include="$(_GoogleMapsSDKBaseResourceFolder)GoogleMaps.bundle\ic_error.png" Visible="False">
         <LogicalName>GoogleMaps.bundle\ic_error.png</LogicalName>
         <Optimize>False</Optimize>
@@ -454,9 +442,6 @@
       </BundleResource>
       <BundleResource Include="$(_GoogleMapsSDKBaseResourceFolder)GoogleMaps.bundle\GMSCoreResources.bundle\lt.lproj\GMSCore.strings" Visible="False">
         <LogicalName>GoogleMaps.bundle\GMSCoreResources.bundle\lt.lproj\GMSCore.strings</LogicalName>
-      </BundleResource>
-      <BundleResource Include="$(_GoogleMapsSDKBaseResourceFolder)GoogleMaps.bundle\GMSCoreResources.bundle\lv.lproj\GMSCore.strings" Visible="False">
-        <LogicalName>GoogleMaps.bundle\GMSCoreResources.bundle\lv.lproj\GMSCore.strings</LogicalName>
       </BundleResource>
       <BundleResource Include="$(_GoogleMapsSDKBaseResourceFolder)GoogleMaps.bundle\GMSCoreResources.bundle\ms.lproj\GMSCore.strings" Visible="False">
         <LogicalName>GoogleMaps.bundle\GMSCoreResources.bundle\ms.lproj\GMSCore.strings</LogicalName>
