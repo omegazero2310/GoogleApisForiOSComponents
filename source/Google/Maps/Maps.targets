@@ -15,20 +15,20 @@
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
-      <LinkerFlags>-ObjC</LinkerFlags>
+      <LinkerFlags>-ObjC -v</LinkerFlags>
       <Frameworks>Accelerate Contacts CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
     </NativeReference>
     <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
-      <LinkerFlags>-ObjC</LinkerFlags>
+      <LinkerFlags>-ObjC -v</LinkerFlags>
     </NativeReference>
 	<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>  
-      <LinkerFlags>-ObjC -lc++ -lz</LinkerFlags>
+      <LinkerFlags>-ObjC -lc++ -lz -v</LinkerFlags>
       <Frameworks>CoreData CoreGraphics CoreLocation CoreTelephony CoreText QuartzCore SystemConfiguration UIKit</Frameworks>
     </NativeReference>
     <XamarinBuildRestoreResources Include="_GMpsDownloadedItems" />
