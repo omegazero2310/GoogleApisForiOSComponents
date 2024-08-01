@@ -11,25 +11,18 @@
       <Url>https://dl.google.com/dl/cpdc/4f5e2e8df490479f/GoogleMaps-9.0.0.tar.gz</Url> <!--Get from https://github.com/CocoaPods/Specs/blob/master/Specs/a/d/d/GoogleMaps/9.0.0/GoogleMaps.podspec.json-->
       <Kind>Tgz</Kind>
     </XamarinBuildDownload>
-    <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMaps.framework">
+    <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMaps.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
       <LinkerFlags>-ObjC</LinkerFlags>
-      <Frameworks>Accelerate CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
+      <Frameworks>Accelerate Contacts CoreData CoreGraphics CoreImage CoreLocation CoreTelephony CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
     </NativeReference>
-    <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.framework">
+    <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
       <LinkerFlags>-ObjC</LinkerFlags>
-    </NativeReference>
-    <NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.framework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-      <ForceLoad>True</ForceLoad>
-      <LinkerFlags>-ObjC -lc++ -lz</LinkerFlags>
-      <Frameworks>CoreData CoreGraphics CoreLocation CoreTelephony QuartzCore SystemConfiguration UIKit</Frameworks>
     </NativeReference>
     <XamarinBuildRestoreResources Include="_GMpsDownloadedItems" />
   </ItemGroup>
