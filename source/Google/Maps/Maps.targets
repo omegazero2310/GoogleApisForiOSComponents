@@ -16,7 +16,7 @@
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
       <LinkerFlags>-ObjC</LinkerFlags>
-      <Frameworks>Accelerate Contacts CoreData CoreGraphics CoreImage CoreLocation CoreTelephony CoreText CoreAudioTypes libc++.tbd libz.tbd UIKit GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
+      <Frameworks>Accelerate Contacts CoreData CoreGraphics CoreImage CoreLocation CoreTelephony CoreText libc++.tbd libz.tbd UIKit GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
     </NativeReference>
     <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
       <Kind>Framework</Kind>
