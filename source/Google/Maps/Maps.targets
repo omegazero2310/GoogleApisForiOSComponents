@@ -15,21 +15,21 @@
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
-      <LinkerFlags>-ObjC -v</LinkerFlags>
-      <Frameworks>Accelerate Contacts CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
+      <LinkerFlags>-ObjC</LinkerFlags>
+      <Frameworks>Accelerate Contacts CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security CoreData CoreGraphics CoreLocation CoreTelephony CoreText QuartzCore SystemConfiguration UIKit</Frameworks>
     </NativeReference>
     <NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
-      <LinkerFlags>-ObjC -v</LinkerFlags>
+      <LinkerFlags>-ObjC</LinkerFlags>
     </NativeReference>
 	<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>  
-      <LinkerFlags>-ObjC -lc++ -lz -v</LinkerFlags>
-      <Frameworks>CoreData CoreGraphics CoreLocation CoreTelephony CoreText QuartzCore SystemConfiguration UIKit</Frameworks>
+      <LinkerFlags>-ObjC -lc++ -lz</LinkerFlags>
+      <Frameworks>CoreData CoreGraphics CoreLocation CoreTelephony CoreText QuartzCore SystemConfiguration UIKit Accelerate Contacts CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore Security</Frameworks>
     </NativeReference>
     <XamarinBuildRestoreResources Include="_GMpsDownloadedItems" />
   </ItemGroup>
