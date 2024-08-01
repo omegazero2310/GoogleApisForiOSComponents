@@ -22,6 +22,13 @@
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
+      <LinkerFlags>-ObjC -lc++ -lz -v</LinkerFlags>
+	  <Frameworks>Accelerate Contacts CoreData CoreGraphics CoreImage CoreLocation CoreTelephony CoreText UIKit GLKit ImageIO Metal OpenGLES QuartzCore Security SystemConfiguration</Frameworks>
+    </NativeReference>
+	<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework">
+      <Kind>Framework</Kind>
+      <SmartLink>True</SmartLink>
+      <ForceLoad>True</ForceLoad>
       <LinkerFlags>-ObjC -v</LinkerFlags>
     </NativeReference>
     <XamarinBuildRestoreResources Include="_GMpsDownloadedItems" />
