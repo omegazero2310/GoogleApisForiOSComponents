@@ -78,7 +78,7 @@ namespace Google.Maps
 				if (accessibilityOutOfQuota == null) {
 					IntPtr RTLD_MAIN_ONLY = Dlfcn.dlopen (null, 0);
 					IntPtr ptr = Dlfcn.dlsym (RTLD_MAIN_ONLY, "kGMSAccessiblityOutOfQuota");
-					markerDefaultInfoWindowAnchor = (NSString) Marshal.PtrToStructure (ptr, typeof (NSString));
+					accessibilityOutOfQuota = (NSString) Marshal.PtrToStructure (ptr, typeof (NSString));
 					Dlfcn.dlclose (RTLD_MAIN_ONLY);
 				}
 
