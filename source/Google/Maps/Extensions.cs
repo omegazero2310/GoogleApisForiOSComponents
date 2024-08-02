@@ -71,20 +71,20 @@ namespace Google.Maps
 			}
 		}
 
-		static NSString accessibilityOutOfQuota;
+		//static NSString accessibilityOutOfQuota;
 
-		public static NSString AccessibilityOutOfQuota {
-			get {
-				if (accessibilityOutOfQuota == null) {
-					IntPtr RTLD_MAIN_ONLY = Dlfcn.dlopen (null, 0);
-					IntPtr ptr = Dlfcn.dlsym (RTLD_MAIN_ONLY, "kGMSAccessiblityOutOfQuota");
-					accessibilityOutOfQuota = (NSString) Marshal.PtrToStructure (ptr, typeof (NSString));
-					Dlfcn.dlclose (RTLD_MAIN_ONLY);
-				}
+		//public static NSString AccessibilityOutOfQuota {
+		//	get {
+		//		if (accessibilityOutOfQuota == null) {
+		//			IntPtr RTLD_MAIN_ONLY = Dlfcn.dlopen (null, 0);
+		//			IntPtr ptr = Dlfcn.dlsym (RTLD_MAIN_ONLY, "kGMSAccessiblityOutOfQuota");
+		//			accessibilityOutOfQuota = (NSString) Marshal.PtrToStructure (ptr, typeof (NSString));
+		//			Dlfcn.dlclose (RTLD_MAIN_ONLY);
+		//		}
 
-				return accessibilityOutOfQuota;
-			}
-		}
+		//		return accessibilityOutOfQuota;
+		//	}
+		//}
 	}
 
 	public partial class GeometryUtils
