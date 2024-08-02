@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 using Foundation;
@@ -68,6 +68,21 @@ namespace Google.Maps
 					tileLayerNoTile = GetNSObject<UIImage> (_TileLayerNoTile);
 
 				return tileLayerNoTile;
+			}
+		}
+
+		static NSString accessibilityOutOfQuota;
+
+		public static NSString AccessibilityOutOfQuota {
+			get {
+				if (accessibilityOutOfQuota == null) {
+					IntPtr RTLD_MAIN_ONLY = Dlfcn.dlopen (null, 0);
+					IntPtr ptr = Dlfcn.dlsym (RTLD_MAIN_ONLY, "kGMSAccessibilityOutOfQuota");
+					markerDefaultInfoWindowAnchor = (CGPoint) Marshal.PtrToStructure (ptr, typeof (NSString));
+					Dlfcn.dlclose (RTLD_MAIN_ONLY);
+				}
+
+				return accessibilityOutOfQuota;
 			}
 		}
 	}
