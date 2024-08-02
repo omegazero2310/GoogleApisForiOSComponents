@@ -14,7 +14,7 @@
 		</XamarinBuildDownload>
 		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMaps.xcframework">
 			<Kind>Framework</Kind>
-			<SmartLink>True</SmartLink>
+			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
 			<LinkerFlags>-ObjC -v</LinkerFlags>
 			<MtouchLink>None</MtouchLink>
@@ -22,14 +22,14 @@
 		</NativeReference>
 		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
 			<Kind>Framework</Kind>
-			<SmartLink>True</SmartLink>
+			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
 			<MtouchLink>None</MtouchLink>
 			<LinkerFlags>-ObjC</LinkerFlags>
 		</NativeReference>
 		<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework">
 			<Kind>Framework</Kind>
-			<SmartLink>True</SmartLink>
+			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
 			<LinkerFlags>-ObjC -lc++ -lz -ld64</LinkerFlags>
 			<MtouchLink>None</MtouchLink>
