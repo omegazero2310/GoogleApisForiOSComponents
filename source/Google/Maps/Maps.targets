@@ -18,7 +18,7 @@
 			<ForceLoad>True</ForceLoad>
 			<LinkerFlags>-ObjC -all_load -v</LinkerFlags>
 			<MtouchLink>None</MtouchLink>
-			<Frameworks>Accelerate CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore</Frameworks>
+			<Frameworks>Accelerate CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore GoogleMaps GoogleMapsCore GoogleMapsBase</Frameworks>
 		</NativeReference>
 		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
 			<Kind>Framework</Kind>
@@ -26,6 +26,7 @@
 			<ForceLoad>True</ForceLoad>
 			<MtouchLink>None</MtouchLink>
 			<LinkerFlags>-ObjC -all_load</LinkerFlags>
+			<Frameworks>GoogleMapsCore</Frameworks>
 		</NativeReference>
 		<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework">
 			<Kind>Framework</Kind>
@@ -33,7 +34,7 @@
 			<ForceLoad>True</ForceLoad>
 			<LinkerFlags>-ObjC -lc++ -lz -ld64 -all_load</LinkerFlags>
 			<MtouchLink>None</MtouchLink>
-			<Frameworks>Contacts CoreData CoreGraphics CoreLocation CoreTelephony QuartzCore SystemConfiguration UIKit</Frameworks>
+			<Frameworks>Contacts CoreData CoreGraphics CoreLocation CoreTelephony QuartzCore SystemConfiguration UIKit GoogleMapsBase</Frameworks>
 		</NativeReference>
 		<XamarinBuildRestoreResources Include="_GMpsDownloadedItems" />
 	</ItemGroup>
