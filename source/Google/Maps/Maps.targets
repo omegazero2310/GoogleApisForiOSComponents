@@ -5,8 +5,8 @@
 		<_GoogleMapsSDKBaseResourceFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Resources\GoogleMapsResources\</_GoogleMapsSDKBaseResourceFolder>
 		<_GoogleMapsSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Maps\Frameworks\</_GoogleMapsSDKBaseFolder>
 		<_GoogleMapsBaseSDKBaseFolder>$(XamarinBuildDownloadDir)$(_GoogleMapsItemsFolder)\Base\Frameworks\</_GoogleMapsBaseSDKBaseFolder>
-		<_SwiftPlatform Condition="$(RuntimeIdentifier.StartsWith('iossimulator-'))">iphonesimulator</_SwiftPlatform>
-		<_SwiftPlatform Condition="$(RuntimeIdentifier.StartsWith('ios-'))">iphoneos</_SwiftPlatform>
+		<_SwiftPlatform Condition="$(RuntimeIdentifier.StartsWith('iossimulator-'))">ios-arm64</_SwiftPlatform>
+		<_SwiftPlatform Condition="$(RuntimeIdentifier.StartsWith('ios-'))">ios-arm64_x86_64-simulator</_SwiftPlatform>
 	</PropertyGroup>
 	<ItemGroup Condition="('$(OutputType)'!='Library' OR '$(IsAppExtension)'=='True')">
 		<XamarinBuildDownload Include="$(_GoogleMapsItemsFolder)">
@@ -14,7 +14,7 @@
 			<!--Get from https://github.com/CocoaPods/Specs/blob/master/Specs/a/d/d/GoogleMaps/9.0.0/GoogleMaps.podspec.json-->
 			<Kind>Tgz</Kind>
 		</XamarinBuildDownload>
-		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMaps.xcframework">
+		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMaps.xcframework/$(_SwiftPlatform)/GoogleMaps.framework">
 			<Kind>Framework</Kind>
 			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
@@ -22,7 +22,7 @@
 			<MtouchLink>None</MtouchLink>
 			<Frameworks>Accelerate CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore GoogleMaps GoogleMapsCore GoogleMapsBase</Frameworks>
 		</NativeReference>
-		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework">
+		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework/$(_SwiftPlatform)/GoogleMapsCore.framework">
 			<Kind>Framework</Kind>
 			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
@@ -30,7 +30,7 @@
 			<LinkerFlags>-ObjC -all_load</LinkerFlags>
 			<Frameworks>GoogleMapsCore</Frameworks>
 		</NativeReference>
-		<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework">
+		<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework/$(_SwiftPlatform)/GoogleMapsBase.framework">
 			<Kind>Framework</Kind>
 			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
