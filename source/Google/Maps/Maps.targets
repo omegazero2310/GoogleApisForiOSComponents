@@ -18,25 +18,25 @@
 			<Kind>Framework</Kind>
 			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
-			<LinkerFlags>-ObjC -all_load -v</LinkerFlags>
+			<!--<LinkerFlags>-ObjC -all_load -v</LinkerFlags>
 			<MtouchLink>None</MtouchLink>
-			<Frameworks>Accelerate CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore GoogleMaps GoogleMapsCore GoogleMapsBase</Frameworks>
+			<Frameworks>Accelerate CoreImage CoreText GLKit ImageIO Metal OpenGLES QuartzCore GoogleMaps GoogleMapsCore GoogleMapsBase</Frameworks>-->
 		</NativeReference>
 		<NativeReference Include="$(_GoogleMapsSDKBaseFolder)GoogleMapsCore.xcframework/$(_SwiftPlatform)/GoogleMapsCore.framework">
 			<Kind>Framework</Kind>
 			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
-			<MtouchLink>None</MtouchLink>
+			<!--<MtouchLink>None</MtouchLink>
 			<LinkerFlags>-ObjC -all_load</LinkerFlags>
-			<Frameworks>GoogleMapsCore</Frameworks>
+			<Frameworks>GoogleMapsCore</Frameworks>-->
 		</NativeReference>
 		<NativeReference Include="$(_GoogleMapsBaseSDKBaseFolder)GoogleMapsBase.xcframework/$(_SwiftPlatform)/GoogleMapsBase.framework">
 			<Kind>Framework</Kind>
 			<SmartLink>False</SmartLink>
 			<ForceLoad>True</ForceLoad>
-			<LinkerFlags>-ObjC -lc++ -lz -ld64 -all_load</LinkerFlags>
+			<!--<LinkerFlags>-ObjC -lc++ -lz -ld64 -all_load</LinkerFlags>
 			<MtouchLink>None</MtouchLink>
-			<Frameworks>Contacts CoreData CoreGraphics CoreLocation CoreTelephony QuartzCore SystemConfiguration UIKit GoogleMapsBase</Frameworks>
+			<Frameworks>Contacts CoreData CoreGraphics CoreLocation CoreTelephony QuartzCore SystemConfiguration UIKit GoogleMapsBase</Frameworks>-->
 		</NativeReference>
 		<XamarinBuildRestoreResources Include="_GMpsDownloadedItems" />
 	</ItemGroup>
